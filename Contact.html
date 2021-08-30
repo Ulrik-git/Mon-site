@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Contact</title>
+</head>
+<body>
+    <div id="contact_contenu">
+        <div id="contact">
+            <header>
+                <div class="titre_principal">
+                    <h1><a href="Accueil.html">Ulrik EDELINE</a></h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li class="hover"><a href="Accueil.html">Accueil</a></li>
+                        <li class="hover"><a href="Mon_propos.html">À mon propos</a></li>
+                        <li class="hover"><a href="Mes_projets.html">Mes projets</a></li>
+                        <li class="hover"><a href="Mon_CV.html">Mon CV</a></li>
+                        <li class="hover"><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="formulaire">
+                <form method="post" action="mail.php">
+                    <p>
+                        <input type="text" name="objet" id="objet" placeholder="Objet de votre demande" size="25" maxlength="25" required />
+                        <input type="email" name="email" id="email" placeholder="Votre adresse mail (optionnel)" size="30" maxlength="30" />
+
+                        <br />
+                        <textarea name="demande" id="demande" rows="15" cols="63" required placeholder="Décrivez-moi votre demande en quelques lignes."></textarea>
+
+                        <br />
+                        <input type="submit" id="submit" value="Envoyer" />
+                    </p>
+                </form>
+            </div>
+
+            <h2 id="ou">OU</h2>
+            <a id="mon_mail_lien" href="mailto:ulrik.edeline@outlook.fr"><h2 id="mon_mail">Écrivez-moi directement un mail ici.</h2></a>
+        </div>
+
+        <footer>
+            <h4 class="copyright">Copyright ©2021</h4>
+            <div class="footer_pages">
+                <h4>Pages</h4>
+                <ul>
+                    <li class="hover"><a href="Accueil.html">Accueil</a></li>
+                    <li class="hover"><a href="Mon_propos.html">À mon propos</a></li>
+                    <li class="hover"><a href="Mes_projets.html">Mes projets</a></li>
+                    <li class="hover"><a href="Mon_CV.html">Mon CV</a></li>
+                    <li class="hover"><a href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer_reseaux">
+                <h4>Mes réseaux</h4>
+                <ul>
+                    <li class="hover"><a href="https://www.linkedin.com/in/ulrik-edeline-467832217/" target="_blank" title="Mon profil LinkedIn">LinkedIn</a></li>
+                    <li class="hover"><a href="https://github.com/Ulrik-git" target="_blank" title="Mon profil GitHub">GitHub</a></li>
+                    <li class="hover"><a href="https://codepen.io/Ulriked" target="_blank" title="Mon profil CodePen">CodePen</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>

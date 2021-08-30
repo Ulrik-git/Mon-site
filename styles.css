@@ -1,0 +1,699 @@
+﻿@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url("fonts/OpenSans.ttf") format('truetype');
+}
+
+h1 {
+    font-family: OpenSans;
+}
+
+    h1 > a {
+        text-decoration: none;
+        color: black;
+    }
+
+body {
+    margin: auto;
+    background: lightgrey;
+}
+
+header {
+    display: flex;
+    background: lightgrey;
+}
+
+h2 {
+    font-size: 2em;
+    font-family: Roboto;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-family: Roboto;
+}
+
+h4 {
+    font-size: 17.5px;
+    font-family: Roboto;
+}
+
+p {
+    font-size: 1.4em;
+    font-family: OpenSans;
+}
+
+li {
+    font-family: OpenSans;
+}
+
+.titre_principal {
+    margin-left: 10px;
+    width: 40%;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    font-size: 1.3em;
+    width: 60%;
+}
+
+    nav > ul {
+        display: flex;
+        list-style: none;
+    }
+
+        nav > ul > li {
+            margin-right: 20px;
+            text-transform: uppercase;
+        }
+
+#mes_competences_lien, #mes_projets_lien {
+    text-decoration: none;
+    color: white;
+    text-decoration: underline;
+}
+
+section > ul {
+    list-style-type: none;
+    font-size: 20.8px;
+}
+
+a {
+    font-family: Roboto;
+}
+
+.texte_presentation, .contenu {
+    padding: 20px;
+}
+
+.hover:hover {
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a:hover {
+    color: white;
+}
+
+nav > ul > li > a:active {
+    color: lightgreen;
+}
+
+nav > ul > li > a:visited {
+    color: green;
+}
+
+.texte_intro {
+    display: flex;
+}
+
+.texte_intro_gauche {
+    background-image: url(images/numerique.jpg);
+    background-color: #106e97;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 50%;
+    background-size: 100%;
+    color: white;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-blend-mode: darken;
+}
+
+section {
+    width: 100%;
+}
+
+.texte_intro_droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    background-image: url(images/numerique_2.jpg);
+    background-color: #19a6e3;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.ma_photo {
+    height: 250px;
+    border: none;
+    border-radius: 125px;
+}
+
+.img_reseaux {
+    height: 50px;
+    background: white;
+    border-radius: 20%;
+    margin: 5px;
+}
+
+    .img_reseaux:hover {
+        transform: scale(1.15);
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+
+.texte_intro_droite > p {
+    color: white;
+    font-size: 1.3em;
+}
+
+#skills {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+#soft_skills {
+    width: 50%;
+}
+
+#soft_skills_list {
+    list-style-type: circle;
+    text-align: left;
+    font-size: 24px;
+}
+
+#hard_skills {
+    width: 50%;
+    border-left: 2px solid black;
+    padding-left: 20px;
+}
+
+#page_main, #mes_projets_contenu, #contact_contenu {
+    position: relative;
+    min-height: 100vh;
+}
+
+#contenu_main, #articles, #contact {
+    padding-bottom: 180px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    height: 180px;
+    background-color: lightskyblue;
+}
+
+.footer_pages, .footer_reseaux {
+    margin-left: 150px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.copyright {
+    display: flex;
+    align-self: flex-end;
+    padding-left: 20px;
+}
+
+.footer_pages > ul > li {
+    list-style: none;
+}
+
+.footer_reseaux > ul > li {
+    list-style: none;
+}
+
+.footer_pages > ul > li > a {
+    color: white;
+}
+
+.footer_reseaux > ul > li > a {
+    color: white;
+}
+
+.footer_pages > h4 {
+    text-align: left;
+    margin-left: 70px;
+}
+
+.footer_reseaux > h4 {
+    text-align: left;
+    margin-left: 38px;
+}
+
+article {
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+}
+
+.inco_img, .openclassrooms_img {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+}
+
+.articles_contenu {
+    width: 65%;
+    padding: 5px;
+}
+
+.projet_competences {
+    border: 2px dashed black;
+    padding-right: 20px;
+}
+
+    .projet_competences > h3 {
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .projet_competences > ul > li {
+        list-style: disc;
+        text-align: left;
+        font-size: 22px;
+    }
+
+#formulaire {
+    text-align: center;
+}
+
+input, textarea {
+    border-radius: 10px;
+    border-color: lightgrey;
+}
+
+#email:not(:focus):invalid {
+    background-color: lightcoral;
+}
+
+#submit {
+    width: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 5px;
+}
+
+    #submit:hover {
+        transform: scale(1.15);
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+
+#ou {
+    text-align: center;
+    margin: 60px;
+}
+
+#mon_mail_lien {
+    text-decoration: none;
+}
+
+#mon_mail:hover {
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+#mon_mail {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    width: 30%;
+    padding: 5px;
+    margin: auto;
+    border: 2px solid grey;
+    border-radius: 20px;
+    background: white;
+}
+
+.formes {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+.triangle_gauche {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-right: 50px solid #032360;
+    margin-left: 500px;
+}
+
+.triangle_droite {
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-bottom: 25px solid transparent;
+    border-left: 50px solid #032360;
+    position: absolute;
+    right: 500px;
+}
+
+.carre_gauche {
+    width: 47.5px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    margin-left: 500px;
+}
+
+#carre_gauche_lien {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.carre_droite {
+    width: 47.5px;
+    height: 50px;
+    border: 1px solid black;
+    position: absolute;
+    right: 500px;
+}
+
+#carre_droite_lien {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.cercle {
+    margin-left: 155px;
+    background: #032360;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+
+#cercle_lien1, #cercle_lien2, #cercle_lien3, #cercle_lien4, #cercle_lien5 {
+    background: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-top: 12.5px;
+    margin-left: 12.5px;
+    cursor: pointer;
+    font-size: 20px;
+    text-align: center;
+}
+
+    #cercle_lien1:hover, #cercle_lien2:hover, #cercle_lien3:hover, #cercle_lien4:hover, #cercle_lien5:hover {
+        transform: scale(1.15);
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+
+#ligne {
+    background: white;
+    position: absolute;
+    width: 410px;
+    height: 20px;
+    margin-left: 155px;
+    z-index: -1;
+    margin-top: 14px;
+}
+
+#fleche1, #fleche2, #fleche3 {
+    z-index: 1;
+}
+
+#fleche1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid red;
+    margin-right: 255px;
+    margin-top: -10px;
+    display: block;
+}
+
+#fleche2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid red;
+    margin-left: 155px;
+    margin-top: -10px;
+    display: none;
+}
+
+#fleche3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid red;
+    margin-left: 565px;
+    margin-top: -10px;
+    display: none;
+}
+
+#mes_projets_titre {
+    text-align: center;
+    color: #008000;
+}
+
+#change_slides_previous {
+    cursor: pointer;
+    position: absolute;
+    left: 20%;
+    border: 1px solid black;
+    margin-top: 40px;
+    display: none;
+}
+
+#change_slides_next {
+    cursor: pointer;
+    position: absolute;
+    right: 20%;
+    border: 1px solid black;
+    margin-top: 40px;
+    display: block;
+}
+
+    #change_slides_previous:hover, #change_slides_next:hover {
+        transform: scale(1.15);
+        transition-property: transform;
+        transition-duration: 200ms;
+    }
+
+#cache1, #cache2, #cache3, #cache4 {
+    background: lightgrey;
+    position: absolute;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#cache1 {
+    height: 350px;
+}
+
+#cache2 {
+    height: 500px;
+}
+
+#cache3 {
+    height: 330px;
+}
+
+#cache4 {
+    height: 330px;
+}
+
+#cache5 {
+    background: lightgrey;
+    position: absolute;
+    height: 300px;
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+#cache1_back, #cache2_back, #cache3_back, #cache4_back, #cache5_back {
+    border: 1px solid black;
+    margin: auto;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.articles_contenu > ul {
+    list-style-type: none;
+    font-size: 24px;
+}
+
+.articles_contenu > p {
+    text-align: justify;
+    padding: 0px 10px 0px 10px;
+}
+
+.projet_competences {
+    align-self: center;
+}
+
+#article_4 {
+    position: initial;
+}
+
+#article_1, #article_2, #article_3 {
+    position: absolute;
+    bottom: 2000px;
+}
+
+#titre_projet {
+    text-align: center;
+    font-size: 44px;
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+}
+
+@media all and (max-width: 1500px) {
+    #cache1, #cache2, #cache3, #cache4, #cache1_back, #cache2_back, #cache3_back, #cache4_back {
+        display: none;
+    }
+
+    #fleche1 {
+        bottom: 2000px;
+    }
+
+    .texte_intro_gauche, .texte_intro_droite {
+        height: 400px;
+        background-position: center;
+    }
+
+    .articles_contenu {
+        max-width: 90%;
+    }
+
+    .projet_competences {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        text-align: center;
+        border: 2px dashed black;
+        min-width: 50%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .triangle_gauche {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-right: 50px solid #032360;
+        margin-left: 200px;
+    }
+
+    .triangle_droite {
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 25px solid transparent;
+        border-left: 50px solid #032360;
+        position: absolute;
+        right: 200px;
+    }
+
+    .carre_gauche {
+        width: 47.5px;
+        height: 50px;
+        border: 1px solid black;
+        position: absolute;
+        margin-left: 200px;
+    }
+
+    #carre_gauche_lien {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .carre_droite {
+        width: 47.5px;
+        height: 50px;
+        border: 1px solid black;
+        position: absolute;
+        right: 200px;
+    }
+
+    #carre_droite_lien {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .cercle {
+        margin-left: 55px;
+        background: #032360;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        display: inline-block;
+    }
+
+    #cercle_lien1, #cercle_lien2, #cercle_lien3 {
+        background: white;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: inline-block;
+        margin-top: 12.5px;
+        margin-left: 12.5px;
+        cursor: pointer;
+    }
+
+    #ligne, .cercle, #cercle_lien1, #cercle_lien2, #cercle_lien3 {
+        display: none;
+    }
+
+    #change_slides_previous {
+        left: 20px;
+    }
+
+    #change_slides_next {
+        right: 20px;
+    }
+}
+
+@media all and (max-width: 1000px) {
+    #hard_skills_img {
+        height: 25%;
+    }
+}
