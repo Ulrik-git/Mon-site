@@ -30,6 +30,16 @@ function mettreCache4() {
     document.getElementById('cache4').style.cssText = 'display: all';
 }
 
+/* A revoir
+function enleverCache() {
+    document.getElementsByClassName("article").style.cssText = 'display: none';
+}
+
+function mettreCache() {
+    document.getElementById('cache1').style.cssText = 'display: block';
+}
+*/
+
 let slide1 = true;
 let slide2 = false;
 let slide3 = false;

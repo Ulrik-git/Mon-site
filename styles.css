@@ -263,6 +263,20 @@ article {
     padding-bottom: 10px;
 }
 
+.article {
+    display: flex;
+    text-align: center;
+    flex-flow: row wrap;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding-bottom: 10px;
+    display: none;
+}
+
+.article:first-child {
+    display: flex;
+}
+
 .inco_img, .openclassrooms_img {
     height: 100px;
     width: 100px;
@@ -485,7 +499,7 @@ input, textarea {
     color: #008000;
 }
 
-#change_slides_previous {
+#bouton_article_precedent {
     cursor: pointer;
     position: absolute;
     left: 20%;
@@ -494,7 +508,7 @@ input, textarea {
     display: none;
 }
 
-#change_slides_next {
+#bouton_article_suivant {
     cursor: pointer;
     position: absolute;
     right: 20%;
@@ -503,7 +517,7 @@ input, textarea {
     display: block;
 }
 
-    #change_slides_previous:hover, #change_slides_next:hover {
+    #bouton_article_precedent:hover, #bouton_article_suivant:hover {
         transform: scale(1.15);
         transition-property: transform;
         transition-duration: 200ms;
@@ -683,11 +697,11 @@ input, textarea {
         display: none;
     }
 
-    #change_slides_previous {
+    #bouton_article_precedent {
         left: 20px;
     }
 
-    #change_slides_next {
+    #bouton_article_suivant {
         right: 20px;
     }
 }
