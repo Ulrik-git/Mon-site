@@ -30,7 +30,7 @@
         <div id="articles">
 
             <article>
-                <h2 id="cache4" onclick="enleverCache()">
+                <h2 class="cache" onclick="enleverCache()">
                     Cliquer pour afficher :
                     <br />
                     Site responsive à partir d'une maquette avec OpenClassrooms
@@ -54,14 +54,14 @@
                     <ul>
                         <li>Coder un site à partir d'une maquette <br> et d'exigences</li>
                         <li>Pratique d'HTML/CSS</li>
-                        <li>Organisation</li>
+                        <li>Utilisation de GitHub</li>
                     </ul>
                 </aside>
                 <h3 id="cache4_back" onclick="mettreCache()">Cliquer pour cacher</h3>
             </article>
 
             <article>
-                <h2 id="cache3" onclick="enleverCache()">
+                <h2 class="cache" onclick="enleverCache()">
                     Cliquer pour afficher :
                     <br />
                     Création de ce site avec OpenClassrooms
@@ -92,7 +92,7 @@
             </article>
 
             <article>
-                <h2 id="cache2" onclick="enleverCache()">
+                <h2 class="cache" onclick="enleverCache()">
                     Cliquer pour afficher :
                     <br />
                     Hackathon avec Inco Academy
@@ -129,7 +129,7 @@
             </article>
 
             <article>
-                <h2 id="cache1" onclick="enleverCache()">
+                <h2 class="cache" onclick="enleverCache()">
                     Cliquer pour afficher :
                     <br />
                     Création d'un site Wordpress avec Inco Academy
@@ -183,6 +183,16 @@
             </div>
         </footer>
     </div>
+
+    <script>
+        function enleverCache() {
+            document.getElementsByClassName("cache").style.cssText = 'display: none';
+        }
+
+        function mettreCache() {
+            document.getElementById('cache').style.cssText = 'display: block';
+        }
+    </script>
 
 </body>
 </html>

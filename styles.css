@@ -154,7 +154,9 @@ section {
 
 .ma_photo {
     height: 250px;
-    border: none;
+    width: 250px;
+    object-fit: cover;
+    object-position: 100% 20%;
     border-radius: 125px;
 }
 
@@ -523,12 +525,13 @@ input, textarea {
         transition-duration: 200ms;
     }
 
-#cache1, #cache2, #cache3, #cache4 {
+.cache {
     background: lightgrey;
     position: absolute;
     margin-top: 10px;
     width: 100%;
     cursor: pointer;
+    height: 350px;
 }
 
 #cache1 {
