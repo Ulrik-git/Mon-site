@@ -1,4 +1,138 @@
-﻿@font-face {
+﻿#div_projets {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#projet1_btn, #projet2, #projet3, #projet4 {
+    width: 0;
+}
+
+/* version jquery */
+#projet1.animate {
+    transform: scaleX(6) translateX(115px) translateY(300px);
+    visibility: hidden;
+    animation-name: anim_projet1;
+    animation-duration: 1s;
+    color: lightgrey;
+}
+
+#projet2.animate {
+    transform: scaleX(6) translateX(40px) translateY(300px);
+    visibility: hidden;
+    animation-name: anim_projet2;
+    animation-duration: 1s;
+    color: lightgrey;
+}
+
+#projet3.animate {
+    transform: scaleX(6) translateX(-40px) translateY(300px);
+    visibility: hidden;
+    animation-name: anim_projet3;
+    animation-duration: 1s;
+    color: lightgrey;
+}
+
+#projet4.animate {
+    transform: scaleX(6) translateX(-115px) translateY(300px);
+    visibility: hidden;
+    animation-name: anim_projet4;
+    animation-duration: 1s;
+    color: lightgrey;
+}
+
+.reverse {
+    animation-direction: reverse;
+}
+
+#projet1_article, #projet2_article, #projet3_article, #projet4_article {
+    display: none;
+    height: auto;
+    margin-top: 20px;
+}
+
+@keyframes anim_projet1 {
+    0% {
+        transform: scaleX(0) translateY(0px) translateX(0px);
+        visibility: visible;
+        color: lightgrey;
+    }
+    100% {
+        transform: scaleX(6) translateX(115px) translateY(300px);
+        visibility: hidden;
+    }
+}
+
+@keyframes anim_projet2 {
+    0% {
+        transform: scaleX(0) translateY(0px) translateX(0px);
+        visibility: visible;
+        color: lightgrey;
+    }
+    100% {
+        transform: scaleX(6) translateX(40px) translateY(300px);
+        visibility: hidden;
+    }
+}
+
+@keyframes anim_projet3 {
+    0% {
+        transform: scaleX(0) translateY(0px) translateX(0px);
+        visibility: visible;
+        color: lightgrey;
+    }
+    100% {
+        transform: scaleX(6) translateX(-40px) translateY(300px);
+        visibility: hidden;
+    }
+}
+
+@keyframes anim_projet4 {
+    0% {
+        transform: scaleX(0) translateY(0px) translateX(0px);
+        visibility: visible;
+        color: lightgrey;
+    }
+    100% {
+        transform: scaleX(6) translateX(-115px) translateY(300px);
+        visibility: hidden;
+    }
+}
+
+#projet2:checked + label {
+    background: saddlebrown;
+}
+
+#projet3:checked + label {
+    background: deeppink;
+}
+
+#projet4:checked + label {
+    background: goldenrod;
+}
+
+#projet1, #projet2, #projet3, #projet4, label {
+    justify-content: center;
+    border: 1px solid black;
+    padding: 40px 0px;
+    width: 15%;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+label:hover {
+    transform: scale(1.15);
+    transition-property: transform;
+    transition-duration: 200ms;
+}
+
+.projet:focus {
+    background: beige;
+}
+
+@font-face {
     font-family: "Roboto";
     src: url("fonts/Roboto.ttf") format('truetype');
 }
@@ -156,7 +290,7 @@ section {
     height: 250px;
     width: 250px;
     object-fit: cover;
-    object-position: 100% 20%;
+    object-position: 50% 20%;
     border-radius: 125px;
 }
 
@@ -205,7 +339,7 @@ section {
     min-height: 100vh;
 }
 
-#contenu_main, #articles, #contact {
+#contenu_main, #articles, #contact, #mes_projets_articles {
     padding-bottom: 180px;
 }
 
@@ -528,10 +662,15 @@ input, textarea {
 .cache {
     background: lightgrey;
     position: absolute;
-    margin-top: 10px;
     width: 100%;
+    padding-top: 10px;
+    margin-top: 10px;
     cursor: pointer;
-    height: 350px;
+    height: 250px;
+}
+
+.cache:hover {
+    display: none;
 }
 
 #cache1 {
@@ -597,6 +736,82 @@ input, textarea {
 }
 
 @media all and (max-width: 1500px) {
+
+    #projet1.animate {
+        visibility: hidden;
+        transform: scaleX(0) translateX(0px) translateY(0px);
+        animation-name: anim_projet1;
+        animation-duration: 0s;
+        color: lightgrey;
+    }
+    
+    #projet2.animate {
+        visibility: hidden;
+        animation-name: anim_projet2;
+        animation-duration: 0s;
+        color: lightgrey;
+    }
+    
+    #projet3.animate {
+        visibility: hidden;
+        animation-name: anim_projet3;
+        animation-duration: 0s;
+        color: lightgrey;
+    }
+    
+    #projet4.animate {
+        visibility: hidden;
+        animation-name: anim_projet4;
+        animation-duration: 0s;
+        color: lightgrey;
+    }
+
+    @keyframes anim_projet1 {
+        0% {
+            visibility: hidden;
+            transform: scaleX(0) translateX(0px) translateY(0px);
+            color: lightgrey;
+        }
+        100% {
+            visibility: hidden;
+            transform: scaleX(0) translateX(0px) translateY(0px);
+        }
+    }
+    
+    @keyframes anim_projet2 {
+        0% {
+            visibility: hidden;
+            color: lightgrey;
+        }
+        100% {
+            visibility: hidden;
+        }
+    }
+    
+    @keyframes anim_projet3 {
+        0% {
+            visibility: hidden;
+            color: lightgrey;
+        }
+        100% {
+            visibility: hidden;
+        }
+    }
+    
+    @keyframes anim_projet4 {
+        0% {
+            visibility: hidden;
+            color: lightgrey;
+        }
+        100% {
+            visibility: hidden;
+        }
+    }
+
+    #projet1_article, #projet2_article, #projet3_article, #projet4_article {
+        max-width: 100%;
+    }
+
     #cache1, #cache2, #cache3, #cache4, #cache1_back, #cache2_back, #cache3_back, #cache4_back {
         display: none;
     }
@@ -712,5 +927,13 @@ input, textarea {
 @media all and (max-width: 1000px) {
     #hard_skills_img {
         height: 25%;
+    }
+
+    #projet1, #projet2, #projet3, #projet4 {
+        display: none;
+    }
+
+    #projet1_article, #projet2_article, #projet3_article, #projet4_article {
+        display: flex;
     }
 }

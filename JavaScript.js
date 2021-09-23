@@ -1,4 +1,4 @@
-let articles = [document.getElementById('mesArticles').children.length - 1];
+﻿let articles = [document.getElementById('mesArticles').children.length - 1];
 let articleActuel = 0;
 
 function articlePrecedent() {
