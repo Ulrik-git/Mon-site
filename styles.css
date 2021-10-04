@@ -449,6 +449,10 @@ input, textarea {
     border-color: lightgrey;
 }
 
+input {
+    width: 230px;
+}
+
 #email:not(:focus):invalid {
     background-color: lightcoral;
 }
@@ -472,23 +476,24 @@ input, textarea {
     margin: 60px;
 }
 
-#mon_mail_lien {
+#mon_mail_lien, #mon_numero_lien {
     text-decoration: none;
 }
 
-#mon_mail:hover {
+#mon_mail:hover, #mon_numero:hover {
     transform: scale(1.15);
     transition-property: transform;
     transition-duration: 200ms;
 }
 
-#mon_mail {
+#mon_mail, #mon_numero {
     text-align: center;
     text-decoration: none;
     color: black;
     width: 30%;
     padding: 5px;
     margin: auto;
+    margin-bottom: 20px;
     border: 2px solid grey;
     border-radius: 20px;
     background: white;
