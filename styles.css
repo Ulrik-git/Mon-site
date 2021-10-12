@@ -300,6 +300,7 @@ section {
 
 .img_reseaux {
     height: 50px;
+    border: 2px solid lightgrey;
     background: white;
     border-radius: 20%;
     margin: 5px;
@@ -940,6 +941,73 @@ input {
 @media all and (max-width: 1024px) {
     #hard_skills_img {
         height: 40%;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    nav > ul {
+        overflow: scroll;
+    }
+
+    nav > ul > li {
+        display: flex;
+        padding-left: 40px;
+        width: 40px;
+    }
+
+    .texte_intro {
+        flex-direction: column;
+    }
+
+    .texte_intro_gauche, .texte_intro_droite {
+        width: 100%;
+    }
+
+    .texte_intro_droite {
+        padding-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        height: 220px;
+    }
+
+    .footer_pages, .footer_reseaux {
+        margin: 0;
+        padding: 0;
+    }
+
+    footer > .footer_pages > ul, footer > .footer_reseaux > ul {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .footer_pages > h4, .footer_reseaux > h4 {
+        text-align: center;
+        margin: 0;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    footer > .footer_pages > ul > li, footer > .footer_reseaux > ul > li {
+        margin-left: 20px;
+        text-decoration: underline;
+    }
+
+    .copyright {
+        order: 3;
+        align-self: flex-start;
+    }
+    
+    #contenu_main, #articles, #contact, #mes_projets_articles, #contenu {
+        padding-bottom: 220px;
     }
 }
 
