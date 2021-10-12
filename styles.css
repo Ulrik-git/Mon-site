@@ -185,6 +185,10 @@ li {
     font-family: OpenSans;
 }
 
+#contenu {
+    margin: 20px;
+}
+
 .titre_principal {
     margin-left: 10px;
     width: 40%;
@@ -334,12 +338,12 @@ section {
     padding-left: 20px;
 }
 
-#page_main, #mes_projets_contenu, #contact_contenu {
+#page_main, #mes_projets_contenu, #contact_contenu, #CV_contenu {
     position: relative;
     min-height: 100vh;
 }
 
-#contenu_main, #articles, #contact, #mes_projets_articles {
+#contenu_main, #articles, #contact, #mes_projets_articles, #contenu {
     padding-bottom: 180px;
 }
 
@@ -742,6 +746,10 @@ input {
 
 @media all and (max-width: 1500px) {
 
+    #hard_skills_img {
+        height: 60%;
+    }
+
     #projet1.animate {
         visibility: hidden;
         transform: scaleX(0) translateX(0px) translateY(0px);
@@ -926,6 +934,12 @@ input {
 
     #bouton_article_suivant {
         right: 20px;
+    }
+}
+
+@media all and (max-width: 1024px) {
+    #hard_skills_img {
+        height: 40%;
     }
 }
 
