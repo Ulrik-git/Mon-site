@@ -1,4 +1,55 @@
-﻿#div_projets {
+﻿header {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+#mes_liens {
+    /* display: none; */
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background: grey;
+    display: none;
+}
+
+#mes_liens > a {
+    font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    background: grey;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+
+#mes_liens > a:hover {
+    background: lightgray;
+}
+
+#nav_menu {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.header_logo_nav {
+    width: 100%;
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.barres {
+    padding: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.barres:hover {
+    background: grey;
+}
+
+#div_projets {
     width: 100%;
     height: auto;
     display: flex;
