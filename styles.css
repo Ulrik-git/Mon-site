@@ -1,10 +1,52 @@
-﻿header {
+﻿.icone_html {
+    color: #f75421;
+}
+
+.icone_css {
+    color: #006cb4;
+}
+
+.icone_js {
+    color : #e8d44d;
+}
+
+.icone_php {
+    color: #7377ad;
+}
+
+.icone_html, .icone_css, .icone_js, ._icone_php, .icone_github {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.icone_dropdown_bas, .icone_dropdown_haut {
+    display: flex;
+    justify-content: center;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.icone_dropdown_haut {
+    display: none;
+}
+
+.projet_competences > ul {
+    display: none;
+}
+
+.big {
+    font-size: 60px;
+    padding-top: 20px;
+}
+
+header {
     display: flex;
     flex-flow: row wrap;
 }
 
 #mes_liens {
-    /* display: none; */
     display: flex;
     flex-flow: row wrap;
     width: 100%;
@@ -20,6 +62,7 @@
     background: grey;
     text-decoration: none;
     padding: 10px;
+    border-bottom: 1px solid black;
     color: white;
 }
 
@@ -482,12 +525,12 @@ article {
 
 .projet_competences {
     border: 2px dashed black;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
     .projet_competences > h3 {
         text-align: left;
-        padding-left: 20px;
     }
 
     .projet_competences > ul > li {
@@ -987,9 +1030,17 @@ input {
     #bouton_article_suivant {
         right: 20px;
     }
+
+    .articles_contenu {
+        min-width: 80%;
+    }
 }
 
 @media all and (max-width: 1024px) {
+    .articles_contenu {
+        min-width: 80%;
+    }
+
     #hard_skills_img {
         height: 40%;
     }

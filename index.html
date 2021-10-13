@@ -6,6 +6,7 @@
     <meta http-equiv=“Pragma” content=”no-cache”>
     <meta http-equiv=“Expires” content=”-1″>
     <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <link href="styles.css?v=1.1" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/7b50401569.js" crossorigin="anonymous"></script>
     <title>Ulrik EDELINE</title>
@@ -82,12 +83,15 @@
                         </p>
                     </div>
                     <aside class="projet_competences">
-                        <h3>Compétences mises en oeuvre :</h3>
-                        <ul>
+                        <h3>Compétences mises en oeuvre :<br><span class="icone_html"><i class="fab fa-html5 big"></i></span>
+                            <span class="icone_css"><i class="fab fa-css3-alt big"></i></span><span class="icone_github"><i class="fab fa-github big"></i></span><br>
+                            <span class="icone_dropdown_bas"><i class="fas fa-chevron-down big pointer"  onclick="competencesDisplay()"></i></span></h3>
+                        <ul class="liste_comp">
                             <li>Coder un site à partir d'une maquette <br> et d'exigences</li>
-                            <li>Pratique d'HTML/CSS</li>
-                            <li>Utilisation de GitHub</li>
+                            <li>HTML<span class="icone_html"><i class="fab fa-html5"></i></span>CSS<span class="icone_css"><i class="fab fa-css3-alt"></i></span></li>
+                            <li>GitHub<span class="icone_github"><i class="fab fa-github"></i></span></li>
                         </ul>
+                        <span class="icone_dropdown_haut"><i class="fas fa-chevron-up big pointer"  onclick="competencesDisplay()"></i></span>
                     </aside>
                 </article>
 
@@ -107,12 +111,17 @@
                         </p>
                     </div>
                     <aside class="projet_competences">
-                        <h3>Compétences mises en oeuvre :</h3>
-                        <ul>
+                        <h3>Compétences mises en oeuvre :<br><span class="icone_html"><i class="fab fa-html5 big"></i></span>
+                            <span class="icone_css"><i class="fab fa-css3-alt big"></i><span class="icone_js"><i class="fab fa-js big"></i></span>
+                            <span class="icone_php"><i class="fab fa-php big"></i></span></span><span class="icone_github"><i class="fab fa-github big"></i></span><br>
+                            <span class="icone_dropdown_bas"><i class="fas fa-chevron-down big pointer"  onclick="competencesDisplay()"></i></span></h3>
+                        <ul class="liste_comp">
                             <li>Coder un site à partir de zéro</li>
-                            <li>Pratique d'HTML/CSS/Javascript/PHP</li>
+                            <li>HTML<span class="icone_html"><i class="fab fa-html5"></i></span>CSS<span class="icone_css"><i class="fab fa-css3-alt"></i></span>
+                                JavaScript<span class="icone_js"><i class="fab fa-js"></i></span>PHP<span class="icone_php"><i class="fab fa-php"></i></span></li>
                             <li>Organisation</li>
                         </ul>
+                        <span class="icone_dropdown_haut"><i class="fas fa-chevron-up big pointer"  onclick="competencesDisplay()"></i></span>
                     </aside>
                 </article>
 
@@ -207,6 +216,22 @@
                 liens.style.display = "none";
             } else {
                 liens.style.display = "flex";
+            }
+        }
+    </script>
+    <script>
+        var plus = document.querySelector(".icone_dropdown_bas");
+        var moins = document.querySelector(".icone_dropdown_haut");
+        var details = document.querySelector(".liste_comp");
+        function competencesDisplay() {
+            if (plus.style.display !== "none") {
+                plus.style.display = "none";
+                moins.style.display = "block";
+                details.style.display = "block";
+            } else {
+                plus.style.display = "flex";
+                moins.style.display = "none";
+                details.style.display = "none";
             }
         }
     </script>
