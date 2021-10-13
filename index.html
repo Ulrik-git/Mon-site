@@ -220,20 +220,30 @@
         }
     </script>
     <script>
-        var plus = document.querySelector(".icone_dropdown_bas");
-        var moins = document.querySelector(".icone_dropdown_haut");
-        var details = document.querySelector(".liste_comp");
+        var plus = [...document.querySelectorAll("span.icone_dropdown_bas")];
+        var moins = [...document.querySelectorAll("span.icone_dropdown_haut")];
+        var details = [...document.querySelectorAll("ul.liste_comp")];
         function competencesDisplay() {
-            if (plus.style.display !== "none") {
-                plus.style.display = "none";
-                moins.style.display = "block";
-                details.style.display = "block";
+            for (let k = 0; k < moins.length; k++) {
+            if (plus[k].style.display !== "none") {
+                plus[k].style.display = "none";
+                for (let j = 0; j < moins.length; j++) {
+                    moins[j].style.display = "block";
+                }
+                for (let i = 0; i < details.length; i++) {
+                    details[i].style.display = "block";
+                }
             } else {
-                plus.style.display = "flex";
-                moins.style.display = "none";
-                details.style.display = "none";
+                plus[k].style.display = "flex";
+                for (let j = 0; j < details.length; j++) {
+                moins[j].style.display = "none";
+                }
+                for (let i = 0; i < details.length; i++) {
+                details[i].style.display = "none";
+                }
             }
         }
+    }
     </script>
 
 </body>
