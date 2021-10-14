@@ -14,7 +14,23 @@
     color: #7377ad;
 }
 
-.icone_html, .icone_css, .icone_js, ._icone_php, .icone_github {
+.icone_organisation {
+    color: lightseagreen;
+}
+
+.icone_wordpress {
+    color: #007198;
+}
+
+.icone_jquery {
+    max-height: 61px;
+}
+
+ul > li > .icone_jquery {
+    max-height: 16px;
+}
+
+.icone_html, .icone_css, .icone_js, .icone_jquery, ._icone_php, .icone_github, .icone_equipe, .icone_organisation, .icone_wordpress {
     padding-right: 5px;
     padding-left: 5px;
 }
@@ -22,6 +38,14 @@
 .icone_dropdown_bas, .icone_dropdown_haut {
     display: flex;
     justify-content: center;
+    align-self: center;
+    width: 80px;
+    margin: auto;
+    padding: 0;
+}
+
+.icone_dropdown_bas:hover, .icone_dropdown_haut:hover {
+    background: grey;
 }
 
 .pointer {
@@ -62,7 +86,7 @@ header {
     background: grey;
     text-decoration: none;
     padding: 10px;
-    border-bottom: 1px solid black;
+    border-top: 1px solid black;
     color: white;
 }
 
