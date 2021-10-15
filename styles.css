@@ -1,4 +1,9 @@
-﻿.icone_html {
+﻿.swipe_right {
+    position: absolute;
+    display: none;
+}
+
+.icone_html {
     color: #f75421;
 }
 
@@ -1257,5 +1262,13 @@ input {
 
     #demande {
         margin-top: 10px;
+    }
+
+    .swipe_right {
+        position: absolute;
+        display: block;
+        width: 350px;
+        margin-left: 10%;
+        margin-top: 20%;
     }
 }

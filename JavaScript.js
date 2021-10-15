@@ -53,4 +53,5 @@ function articleSuivantSwipe() {
         document.getElementsByClassName("article")[articleActuel].style.cssText = 'display: flex';
         document.getElementsByClassName("article")[articleActuel - 1].style.cssText = 'display: none';
     }
+        document.querySelector(".swipe_right").style.cssText = "display: none";
 }
