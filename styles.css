@@ -458,12 +458,12 @@ section {
     padding-left: 20px;
 }
 
-#page_main, #mes_projets_contenu, #contact_contenu, #CV_contenu {
+#page_main, #mes_projets_contenu, #contact_contenu, #CV_contenu, #mon_propos {
     position: relative;
     min-height: 100vh;
 }
 
-#contenu_main, #articles, #contact, #mes_projets_articles, #contenu {
+#contenu_main, #articles, #contact, #mes_projets_articles, #contenu, #mon_propos_contenu {
     padding-bottom: 180px;
 }
 
@@ -1148,7 +1148,7 @@ input {
 
 @media all and (max-width: 767px) {
     #hard_skills_img {
-        height: 25%;
+        height: 15%;
     }
 
     .texte_intro_gauche, .texte_intro_droite {
@@ -1221,7 +1221,7 @@ input {
         height: 240px;
     }
 
-    #contenu_main, #articles, #contact, #mes_projets_articles, #contenu {
+    #contenu_main, #articles, #contact, #mes_projets_articles, #contenu, #mon_propos_contenu {
         padding-bottom: 240px;
     }
 
@@ -1237,5 +1237,25 @@ input {
     .projet_competences > h3 {
         display: flex;
         flex-flow: row wrap;
+    }
+
+    #skills {
+        padding-bottom: 20px;
+    }
+
+    #soft_skills_list {
+        padding-left: 20px;
+    }
+
+    #soft_skills > ul > li {
+        font-size: 20px;
+    }
+
+    #mon_mail, #mon_numero, #demande {
+        width: 80%;
+    }
+
+    #demande {
+        margin-top: 10px;
     }
 }
