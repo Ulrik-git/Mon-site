@@ -30,3 +30,27 @@ function articleSuivant() {
         document.getElementById("bouton_article_suivant").style.cssText = 'display: none';
     }
 }
+
+function articlePrecedentSwipe() {
+    if (articleActuel > 1) {
+        articleActuel--;
+        document.getElementsByClassName("article")[articleActuel].style.cssText = 'display: flex';
+        document.getElementsByClassName("article")[articleActuel + 1].style.cssText = 'display: none';
+    } else if (articleActuel == 1) {
+        articleActuel--;
+        document.getElementsByClassName("article")[articleActuel].style.cssText = 'display: flex';
+        document.getElementsByClassName("article")[articleActuel + 1].style.cssText = 'display: none';
+    }
+}
+
+function articleSuivantSwipe() {
+    if (articleActuel < articles - 1) {
+        articleActuel++;
+        document.getElementsByClassName("article")[articleActuel].style.cssText = 'display: flex';
+        document.getElementsByClassName("article")[articleActuel - 1].style.cssText = 'display: none';
+    } else if (articleActuel == articles - 1) {
+        articleActuel++;
+        document.getElementsByClassName("article")[articleActuel].style.cssText = 'display: flex';
+        document.getElementsByClassName("article")[articleActuel - 1].style.cssText = 'display: none';
+    }
+}

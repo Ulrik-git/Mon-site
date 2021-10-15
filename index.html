@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css?v=1.1" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/7b50401569.js" crossorigin="anonymous"></script>
+    <script src="src/swiped-events.js"></script>
     <title>Ulrik EDELINE</title>
 </head>
 <body>
@@ -74,7 +75,7 @@
             <a name="mes_projets"></a>
             <h2 id="titre_projet">Mes projets</h2>
             
-            <div id="mesArticles">
+            <div id="mesArticles" data-swipe-threshold="100">
 
                 <article class="article">
                     <img src="images/openclassrooms.png" alt="Logo d'OpenClassrooms" title="Logo d'OpenClassrooms" class="openclassrooms_img" />
@@ -253,6 +254,16 @@
             }
         }
     }
+
+    window.onload = function() {
+
+    document.addEventListener('swiped-left', function() {
+                    articleSuivantSwipe();
+                });
+    document.addEventListener('swiped-right', function() {
+                    articlePrecedentSwipe();
+                });
+            }
     </script>
 
 </body>
