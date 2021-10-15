@@ -5,23 +5,38 @@
 <head>
     <meta charset="utf-8" />
     <link href="styles.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7b50401569.js" crossorigin="anonymous"></script>
     <title>Mon CV</title>
 </head>
 <body>
     <header>
-        <div class="titre_principal">
+        <div class="header_logo_nav">
             <h1><a href="index.html">Ulrik EDELINE</a></h1>
-        </div>
-
-        <nav>
-            <ul>
-                <li class="hover"><a href="index.html">Accueil</a></li>
-                <li class="hover"><a href="mon_propos.html">À mon propos</a></li>
-                <li class="hover"><a href="mes_projets.html">Mes projets</a></li>
-                <li class="hover"><a href="CV.html">Mon CV</a></li>
-                <li class="hover"><a href="contact.html">Contact</a></li>
-            </ul>
+            
+            
+        <nav id="nav_menu">
+                <a class="barres" onclick="navDrop()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </div>
+            <div id="mes_liens">
+                <a href="index.html">Accueil</a>
+                <a href="mon_propos.html">À mon propos</a>
+                <a href="mes_projets.html">Mes projets</a>
+                <a href="CV.html">Mon CV</a>
+                <a href="contact.html">Contact</a>
+            </div>
         </nav>
+        <script>
+            var liens = document.getElementById("mes_liens");
+            function navDrop() {
+                if (liens.style.display == "flex") {
+                    liens.style.display = "none";
+                } else {
+                    liens.style.display = "flex";
+                }
+            }
+        </script>
     </header>
 
     <div id="CV_contenu">

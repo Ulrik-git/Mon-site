@@ -75,6 +75,7 @@ header {
     flex-flow: row wrap;
     width: 100%;
     background: grey;
+    border-bottom: 1px solid black;
     display: none;
 }
 
@@ -1135,12 +1136,6 @@ input {
     #contenu_main, #articles, #contact, #mes_projets_articles, #contenu {
         padding-bottom: 220px;
     }
-}
-
-@media all and (max-width: 1000px) {
-    #hard_skills_img {
-        height: 25%;
-    }
 
     #projet1, #projet2, #projet3, #projet4 {
         display: none;
@@ -1148,5 +1143,94 @@ input {
 
     #projet1_article, #projet2_article, #projet3_article, #projet4_article {
         display: flex;
+    }
+}
+
+@media all and (max-width: 767px) {
+    #hard_skills_img {
+        height: 25%;
+    }
+
+    .texte_intro_gauche, .texte_intro_droite {
+        height: 210px;
+    }
+
+    .texte_intro_gauche {
+        padding-bottom: 20px;
+    }
+
+    .ma_photo {
+        height: 125px;
+        width: 125px;
+    }
+
+    .texte_intro_gauche > section > h2 {
+        font-size: 24px;
+    }
+
+    .texte_intro_gauche > section > ul {
+        padding-left: 0;
+    }
+    
+    .texte_intro_droite > p {
+        font-size: 14px;
+        margin: 7px 0px;
+    }
+
+    .img_reseaux {
+        height: 40px;
+    }
+
+    #bouton_article_precedent, #bouton_article_suivant {
+        display: none;
+    }
+
+    .projet_competences {
+        width: 100%;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .articles_contenu {
+        width: 100%;
+    }
+
+    .articles_contenu > p {
+        font-size: 16px;
+    }
+
+    .articles_contenu > h3 {
+        max-width: 80%;
+        font-size: 24px;
+        margin: 0;
+        margin-left: 60px;
+        padding: 0;
+    }
+
+    .articles_contenu > ul > li {
+        font-size: 18px;
+    }
+
+    .openclassrooms_img, .inco_img {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+    }
+
+    footer {
+        height: 240px;
+    }
+
+    #contenu_main, #articles, #contact, #mes_projets_articles, #contenu {
+        padding-bottom: 240px;
+    }
+
+    .footer_pages > ul > li > a {
+        width: 200px;
+    }
+
+    .copyright {
+        font-size: 14px;
+        padding-top: 25px;
     }
 }
