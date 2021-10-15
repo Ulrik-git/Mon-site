@@ -1233,4 +1233,9 @@ input {
         font-size: 14px;
         padding-top: 25px;
     }
+
+    .projet_competences > h3 {
+        display: flex;
+        flex-flow: row wrap;
+    }
 }
