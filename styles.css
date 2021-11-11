@@ -1,4 +1,17 @@
-﻿.swipe_right {
+﻿#fichiers {
+    width: 240px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#new {
+    color: red;
+    font-size: 14px;
+    text-shadow: 0px 0px;
+    margin-right: 5px;
+}
+
+.swipe_right {
     position: absolute;
     display: none;
 }

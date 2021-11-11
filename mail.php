@@ -15,8 +15,27 @@
     $message = utf8_decode($_POST['demande']);
     $headers = "From:" . $from;
     mail($to,$subject,$message, $headers);
-    echo "L'email a été envoyé.";
+    echo "L'email a été envoyé. ";
+    // Fichier envoyé et sans erreur
+    if (isset($_FILES['fichiers']) && $_FILES['fichiers']['error'] == 0)
+    {   
+        // Fichier inférieur ou égal à 5 Mo
+        if ($_FILES['fichiers']['size'] <= 5000000)
+        {   
+            // Vérification de l'extension du fichier
+            $fileInfo = pathinfo($_FILES['fichiers']['name']);
+            $extension = $fileInfo['extension'];
+            $allowedExtensions = ['jpg', 'jpeg', 'pdf', 'gif', 'png'];
+            if (in_array($extension, $allowedExtensions)) 
+            {
+                //Validation et stockage du fichier
+                move_uploaded_file($_FILES['fichiers']['tmp_name'], 'uploads/' . 
+                basename($_FILES['fichiers']['name']));
+                echo "L'envoi du fichier a bien été effectué.";
+            }
+        }
+    }
     ?>
-    <a href="Contact.html" title="Retour">Retour à la page précédente</a> 
+    <a href="contact.html" title="Retour">Retour à la page précédente</a> 
 </body>
 </html>

@@ -41,13 +41,16 @@
             </header>
 
             <div id="formulaire">
-                <form method="post" action="mail.php">
+                <form method="post" action="mail.php" enctype="multipart/form-data">
                     <p>
                         <input type="text" name="objet" id="objet" placeholder="Objet de votre demande" size="25" maxlength="25" required />
                         <input type="email" name="email" id="email" placeholder="Votre adresse mail (optionnel)" size="30" maxlength="30" />
 
                         <br />
                         <textarea name="demande" id="demande" rows="15" cols="63" required placeholder="Décrivez-moi votre demande en quelques lignes."></textarea>
+                        
+                        <br />
+                        <span id="new">Nouveau !</span><input type="file" name="fichiers" id="fichiers"> 
 
                         <br />
                         <input type="submit" id="submit" value="Envoyer" />
@@ -83,6 +86,19 @@
             </div>
         </footer>
     </div>
+
+    <!-- affichage du texte "nouveau" -->
+    <script>
+    var today = new Date();
+    var day = today.getDate();
+    var month = today.getMonth()+1;
+    var year = today.getFullYear();
+    if (day <= 25 && month == 11 && year == 2021) {
+        document.getElementById("new").style.cssText = "display:inline-block";
+    } else {
+        document.getElementById("new").style.cssText = "display:none";
+    }
+    </script>
 
 </body>
 </html>
